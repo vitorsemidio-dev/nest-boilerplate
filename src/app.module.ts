@@ -1,11 +1,12 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
+import * as Joi from 'joi';
+
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import configuration from './config/configuration';
 import { DatabaseModule } from './database/database.module';
 import { PostgresTypeOrmConfigService } from './database/services/postgres-type-orm-config.service';
-import configuration from './config/configuration';
-import * as Joi from 'joi';
 
 @Module({
   imports: [
