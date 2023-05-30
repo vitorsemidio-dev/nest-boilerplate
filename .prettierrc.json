@@ -3,7 +3,7 @@
   "singleQuote": true,
   "trailingComma": "es5",
   "arrowParens": "avoid",
-  "endOfLine": "auto",
+  "endOfLine": "lf",
   "overrides": [
     {
       "files": "*.json",
